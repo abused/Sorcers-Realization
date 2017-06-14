@@ -1,0 +1,55 @@
+buildscript {
+    repositories {
+        jcenter()
+        maven { url = "http://files.minecraftforge.net/maven" }
+    }
+    dependencies {
+        classpath 'net.minecraftforge.gradle:ForgeGradle:2.2-SNAPSHOT'
+    }
+}
+apply plugin: 'net.minecraftforge.gradle.forge'
+
+repositories {
+    maven {
+        url = "http://dvs1.progwml6.com/files/maven"
+    }
+}
+
+dependencies {
+    deobfCompile "mezz.jei:jei_1.11.2:4.2.4.226:api"
+    runtime "mezz.jei:jei_1.11.2:4.2.4.226"
+}
+
+version = "1.0_1.11.2-Alpha"
+group = "abused_master.reals"
+archivesBaseName = "reals"
+
+sourceCompatibility = targetCompatibility = "1.8"
+compileJava {
+    sourceCompatibility = targetCompatibility = "1.8"
+}
+
+minecraft {
+    version = "1.11.2-13.20.0.2315"
+    runDir = "run"
+	
+    mappings = "snapshot_20161220"
+}
+
+dependencies {
+}
+
+processResources {
+    inputs.property "version", project.version
+    inputs.property "mcversion", project.minecraft.version
+
+    from(sourceSets.main.resources.srcDirs) {
+        include 'mcmod.info'
+                
+        expand 'version':project.version, 'mcversion':project.minecraft.version
+    }
+        
+    from(sourceSets.main.resources.srcDirs) {
+        exclude 'mcmod.info'
+    }
+}

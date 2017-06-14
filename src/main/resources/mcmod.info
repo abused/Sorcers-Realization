@@ -1,0 +1,16 @@
+[
+{
+  "modid": "reals",
+  "name": "Sorcerers Realization",
+  "description": "A magic mod bent on spells, wizards, and much more",
+  "version": "1.0.0",
+  "mcversion": "1.11.2",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["abused_master"],
+  "credits": "",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
