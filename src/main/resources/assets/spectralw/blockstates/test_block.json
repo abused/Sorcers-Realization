@@ -1,0 +1,6 @@
+{
+    "variants": {
+        "normal": { "model": "spectralw:test_block" },
+		"inventory": { "model": "spectralw:test_block" }
+    }
+}

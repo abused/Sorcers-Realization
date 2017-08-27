@@ -4,7 +4,7 @@ buildscript {
         maven { url = "http://files.minecraftforge.net/maven" }
     }
     dependencies {
-        classpath 'net.minecraftforge.gradle:ForgeGradle:2.2-SNAPSHOT'
+        classpath 'net.minecraftforge.gradle:ForgeGradle:2.3-SNAPSHOT'
     }
 }
 apply plugin: 'net.minecraftforge.gradle.forge'
@@ -16,13 +16,13 @@ repositories {
 }
 
 dependencies {
-    deobfCompile "mezz.jei:jei_1.11.2:4.2.4.226:api"
-    runtime "mezz.jei:jei_1.11.2:4.2.4.226"
+    deobfCompile "mezz.jei:jei_1.12:4.7.5.85:api"
+    runtime "mezz.jei:jei_1.12:4.7.5.85"
 }
 
-version = "1.0_1.11.2-Alpha"
-group = "abused_master.reals"
-archivesBaseName = "reals"
+version = "1.0.0_1.12-Alpha"
+group = "abused_master.spectralw"
+archivesBaseName = "spectralw"
 
 sourceCompatibility = targetCompatibility = "1.8"
 compileJava {
@@ -30,10 +30,10 @@ compileJava {
 }
 
 minecraft {
-    version = "1.11.2-13.20.0.2315"
+    version = "1.12-14.21.1.2443"
     runDir = "run"
 	
-    mappings = "snapshot_20161220"
+    mappings = "snapshot_20170624"
 }
 
 dependencies {

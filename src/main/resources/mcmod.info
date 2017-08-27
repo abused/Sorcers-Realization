@@ -1,15 +1,15 @@
 [
 {
-  "modid": "reals",
-  "name": "Sorcerers Realization",
+  "modid": "spectralw",
+  "name": "Spectral Wizardry",
   "description": "A magic mod bent on spells, wizards, and much more",
   "version": "1.0.0",
-  "mcversion": "1.11.2",
+  "mcversion": "1.12",
   "url": "",
   "updateUrl": "",
   "authorList": ["abused_master"],
   "credits": "",
-  "logoFile": "",
+  "logoFile": "assets/spectralw/logo/logo.png",
   "screenshots": [],
   "dependencies": []
 }
