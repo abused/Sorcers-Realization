@@ -1,8 +1,8 @@
 package abused_master.spectral_wizardry.proxy;
 
-import abused_master.spectral_wizardry.api.IMana;
-import abused_master.spectral_wizardry.api.Mana;
-import abused_master.spectral_wizardry.api.ManaStorage;
+import abused_master.spectral_wizardry.api.Essence;
+import abused_master.spectral_wizardry.api.EssenceStorage;
+import abused_master.spectral_wizardry.api.IEssence;
 import abused_master.spectral_wizardry.network.capability.CapabilityHandler;
 import abused_master.spectral_wizardry.network.events.SpectralEvents;
 import abused_master.spectral_wizardry.registry.ModBlocks;
@@ -30,7 +30,7 @@ public class CommonProxy {
     public void init(FMLInitializationEvent e) {
         MinecraftForge.EVENT_BUS.register(new SpectralEvents());
         MinecraftForge.EVENT_BUS.register(new CapabilityHandler());
-        CapabilityManager.INSTANCE.register(IMana.class, new ManaStorage(), Mana.class);
+        CapabilityManager.INSTANCE.register(IEssence.class, new EssenceStorage(), Essence.class);
     }
 
     public void postInit(FMLPostInitializationEvent e) {

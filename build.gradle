@@ -13,11 +13,15 @@ repositories {
     maven {
         url = "http://dvs1.progwml6.com/files/maven"
     }
+	
+	  maven { url 'http://tehnut.info/maven/' }
 }
 
 dependencies {
     deobfCompile "mezz.jei:jei_1.12:4.7.5.85:api"
     runtime "mezz.jei:jei_1.12:4.7.5.85"
+	
+	deobfCompile "info.amerifrance.guideapi:Guide-API:1.12-2.1.4-57"
 }
 
 version = "1.0.0_1.12-Alpha"
